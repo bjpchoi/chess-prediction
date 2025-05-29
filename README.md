@@ -12,6 +12,6 @@ However, I did manage to come up with a nice little rank-2 embedding that does i
 
 ![20K Results](results/results_20K.png)
 
-There's also a funny little Simpson-style phenomenon/paradox when it comes to comparing learned player strength with learned player schedule strength; stronger ``schedules" do signal stronger players as seen in the ML coefficients above.
+There's also a funny little Simpson-style phenomenon/paradox when it comes to comparing learned player strength with learned player schedule strength; stronger "schedules" do signal stronger players as seen in the ML coefficients above.
 
 ![Plot](results/plot.png)
