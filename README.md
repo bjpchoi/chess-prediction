@@ -2,7 +2,7 @@ I was able to run a few ML experiments with direct real-world data from a small 
 
 I wanted to build a prediction algorithm that could look only at a blind matrix of match results—i.e., without including any other data (e.g., Lichess Elos, move patterns, etc.). I tried to learn some rank-2+ embeddings implicitly as well as some more elaborate graph-based learning algorithms. In short, I tried a whole bunch of fancy little attempts at extensions but did not find positive results relative to the rank-1 version. 
 
-However, I did manage to come up with a nice little rank-2 embedding that does indeed outperform a classic rank-1 Elo-style method! This method leverages the fact that there's signal originating implicitly from the Lichess "matching" algorithm—which loosely tries to construct competitive similar-skill matchups and in turn subtly reveals player strength. The augmented rank-2 model achieves statistically significant performance on the 6M-match database.  
+However, I did manage to come up with a nice little two-feature model that does indeed outperform a classic rank-1 Elo-style method! This method leverages the fact that there's signal originating implicitly from the Lichess "matching" algorithm—which loosely tries to construct competitive similar-skill matchups and in turn subtly reveals player strength. The augmented model (with "schedule strength") achieves a performance bump on the 6M-match database.  
 
 Nothing hugely groundbreaking, of course, but it's a humorous result :)
 
