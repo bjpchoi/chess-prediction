@@ -1,4 +1,4 @@
-I was able to run a few ML experiments on a small Lichess database with 20K games (https://www.kaggle.com/datasets/datasnaek/chess) and a larger Lichess database with 6M games (https://www.kaggle.com/datasets/arevel/chess-games/data). 
+I was able to run a few ML experiments with direct real-world data from a small Lichess database with 20K games (https://www.kaggle.com/datasets/datasnaek/chess) and a larger Lichess database with 6M games (https://www.kaggle.com/datasets/arevel/chess-games/data). 
 
 I wanted to build a prediction algorithm that could look only at a blind matrix of match results--i.e., without including any other data (e.g., Lichess Elos, move patterns, etc.). I tried to learn some rank-2+ embeddings implicitly as well as some more elaborate graph-based learning algorithms, but did not find positive results relative to the rank-1 version. 
 
