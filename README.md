@@ -1,5 +1,8 @@
+I was able to run a few ML experiments on a small Lichess database with 20K games (https://www.kaggle.com/datasets/datasnaek/chess) and a larger Lichess database with 6M games (https://www.kaggle.com/datasets/arevel/chess-games/data). 
 
-Here are some key results from the experiments:
+I wanted to build a prediction algorithm that could look only at a blind matrix of match results--i.e., without including any other data (e.g., Lichess Elos, move patterns, etc.). I tried to learn some rank-2+ embeddings implicitly as well as some more elaborate graph-based learning algorithms, but did not find positive results relative to the rank-1 version. 
+
+However, I did manage to come up with a nice little rank-2 embedding that does indeed outperform a classic rank-1 Elo-style method! This method leverages the fact that there's signal originating implicitly from the Lichess "matching" algorithm--which loosely tries to construct competitive similar-skill matchups and in turn subtly reveals player strength. The augmented rank-2 model achieves statistically significant performance on the 6M-match database.  
 
 ### 6M Dataset
 
@@ -8,3 +11,7 @@ Here are some key results from the experiments:
 ### 20K Dataset
 
 ![20K Results](results/results_20K.png)
+
+There's also a funny little Simpson-style phenomenon/paradox when it comes to comparing learned player strength with learned player schedule strength; stronger ``schedules" do signal stronger players as seen in the ML coefficients above.
+
+![Plot](results/plot.png)
