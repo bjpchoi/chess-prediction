@@ -4,7 +4,7 @@ I wanted to build a prediction algorithm that could look only at a blind matrix 
 
 However, I did manage to come up with a nice little rank-2 embedding that does indeed outperform a classic rank-1 Elo-style method! This method leverages the fact that there's signal originating implicitly from the Lichess "matching" algorithm—which loosely tries to construct competitive similar-skill matchups and in turn subtly reveals player strength. The augmented rank-2 model achieves statistically significant performance on the 6M-match database.  
 
-Nothing hugely groundbreaking here, but it's a humorous result.
+Nothing hugely groundbreaking, of course, but it's a humorous result :)
 
 ### 6M Dataset
 
